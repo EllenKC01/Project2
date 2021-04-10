@@ -8,8 +8,9 @@ img {
 }
 
 a {
-  color: black;
+  color: white;
   text-decoration: none;
+  border: white;
 }
 
 h1 {
@@ -41,6 +42,16 @@ i {
   color: #607da3;
 }
 
+.background {
+  position: relative;
+  text-align: center;
+}
+
+.background-img {
+  width: 100%;
+  min-height: 812px;
+}
+
 .nav-primary {
   padding: 10px;
   box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.16);
@@ -52,15 +63,27 @@ i {
   margin: none;
 }
 
+.top {
+  position: absolute;
+  width: 100%;
+}
+
 .logo {
   width: 40px;
+}
+
+.align-logo {
+  text-align: left;
 }
 
 .nav-links {
   display: flex;
   flex-direction: row-reverse;
   margin: auto;
-  align-content: center;
+}
+
+.align-links {
+  text-align: right;
 }
 
 .grid-container {
@@ -99,10 +122,11 @@ i {
   padding: 10px;
   font-size: 18px;
   border-radius: 6px;
+  border: white;
+  box-shadow: 0 0 1px 1px white;
 }
 
-.button:hover,
-.button:focus {
+.button:hover {
   background-color: black;
   opacity: 0.5;
 }
@@ -161,19 +185,19 @@ iframe {
 
 .footer {
   width: 100%;
-  font-size: 20px;
-  font-weight: normal;
   text-align: center;
   background: #607da3;
-  padding: 10px;
+}
+
+.end {
+  font-size: 20px;
+  font-weight: normal;
   color: white;
-  top: 0;
-  left: 0;
+  padding: 10px;
 }
 
 .faq {
   padding: 10px;
-  position: sticky;
   top: 0;
   left: 0;
   background-color: #9ebc9e;
@@ -189,64 +213,40 @@ iframe {
 
 .accordion > * {
   padding: 10px;
-  position: sticky;
   top: 0;
   left: 0;
   background-color: #9ebc9e;
   width: 100%;
   margin-top: 5px;
   margin-bottom: 5px;
-  display: grid;
-  grid-template-columns: 8fr 1fr;
-  grid-gap: 25px;
+  display: block;
   cursor: pointer;
 }
 
-.arrow {
-  border: solid black;
-  border-width: 0 5px 5px 0;
-  display: inline-flex;
-  padding: 3px;
-  transform: rotate(-135deg);
-  -webkit-transform: rotate(-135deg);
-  position: relative;
-}
-
-.arrow:active {
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  display: none;
-  position: absolute;
-  background-color: #9ebc9e;
-  min-width: 160px;
-  z-index: 1;
-}
-
-.dropdown:active .answers {
-  display: block;
-}
-
 .answers {
-  display: none;
-  position: absolute;
   background-color: #9ebc9e;
+  padding: 10px;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
 }
 
 .home {
-  margin: auto;
-  background-image: url("forest.jpg");
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .container {
   height: 300px;
   position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .nav-btns {
-  margin: 0;
+  margin: auto;
   position: absolute;
   top: 50%;
   -ms-transform: translateY(-50%);
@@ -255,9 +255,183 @@ iframe {
 
 .nav-btns button {
   display: block;
-  margin: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .icons {
   margin-left: 20px;
+}
+
+.credits {
+  background: #f1e4eb;
+}
+
+.final-p {
+  margin-bottom: 40px;
+}
+
+@media (min-width: 767px) {
+  h1 {
+    font-size: 48px;
+    text-align: center;
+    font-family: Forma DJR Deck;
+    font-weight: bold;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #607da3;
+  }
+
+  table,
+  tr,
+  th {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .background-img {
+    width: 100%;
+    max-height: 800px;
+  }
+
+  .top {
+    position: absolute;
+    width: 100%;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: auto;
+    text-align: right;
+  }
+
+  .logo {
+    width: 60px;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 0px;
+  }
+
+  .button {
+    background-color: transparent;
+    padding: 10px;
+    font-size: 28px;
+    border-radius: 6px;
+    border: white;
+    box-shadow: 0 0 1px 1px white;
+  }
+
+  .p {
+    font-size: 28px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .page-title {
+    text-align: center;
+    font-size: 38px;
+    font-family: Forma DJR Deck;
+    font-weight: bold;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #3b3b3b;
+  }
+
+  .subtitle {
+    text-align: center;
+    font-style: italic;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 34px;
+    font-weight: normal;
+  }
+
+  .caption {
+    max-width: 700px;
+    font-size: 22px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+  }
+
+  .faq {
+    padding: 10px;
+    margin: auto;
+    background-color: #9ebc9e;
+    max-width: 860px;
+  }
+
+  .faq-label {
+    font-size: 30px;
+    font-weight: normal;
+    text-align: center;
+  }
+
+  .accordion > * {
+    padding: 40px;
+    max-width: 800px;
+    margin: auto;
+    background-color: #9ebc9e;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+    cursor: pointer;
+    font-size: 28px;
+  }
+
+  .answers {
+    background-color: #9ebc9e;
+    padding: 20px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    font-size: 24px;
+  }
+
+  .final-p {
+    margin-bottom: 80px;
+  }
+
+  .icons {
+    margin-left: 100px;
+    margin-bottom: 30px;
+  }
+
+  .desktop {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+    max-width: 800px;
+    margin: auto;
+  }
+
+  .hv-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer {
+    width: 100%;
+    text-align: center;
+    background: #607da3;
+  }
+
+  .end {
+    font-size: 30px;
+    font-weight: normal;
+    color: white;
+    padding: 20px;
+  }
 }
