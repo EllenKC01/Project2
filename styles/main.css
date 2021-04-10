@@ -64,6 +64,7 @@ i {
   opacity: 0.8;
   margin: none;
   box-sizing: border-box;
+  z-index: 1;
 }
 
 .top {
