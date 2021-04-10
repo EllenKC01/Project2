@@ -67,6 +67,7 @@ i {
   margin: 0;
   box-sizing: border-box;
   z-index: 1;
+  backdrop-filter: blur(5px);
 }
 
 .top {
