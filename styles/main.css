@@ -63,6 +63,7 @@ i {
   background: #607da3;
   opacity: 0.8;
   margin: none;
+  box-sizing: border-box;
 }
 
 .top {
