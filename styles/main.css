@@ -62,7 +62,7 @@ i {
   left: 0;
   background: #607da3;
   opacity: 0.8;
-  margin: none;
+  margin: 0;
   box-sizing: border-box;
   z-index: 1;
 }
@@ -206,7 +206,7 @@ iframe {
   left: 0;
   background-color: #9ebc9e;
   width: 100%;
-  margin: none;
+  margin: 0;
   box-sizing: border-box;
 }
 
