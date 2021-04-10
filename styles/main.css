@@ -46,13 +46,14 @@ i {
 }
 
 .background {
-  position: relative;
+  height: calc(100vh - 65px);
   text-align: center;
 }
 
 .background-img {
   width: 100%;
-  min-height: 812px;
+  height: 100%;
+  object-fit: cover;
 }
 
 .nav-primary {
@@ -300,11 +301,6 @@ iframe {
   th {
     padding: 20px;
     margin: 20px;
-  }
-
-  .background-img {
-    width: 100%;
-    max-height: 800px;
   }
 
   .top {
