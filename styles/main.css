@@ -1,7 +1,17 @@
+:root {
+  --theme-light-gray: #707070;
+  --theme-dark-gray: #3b3b3b;
+  --theme-white: white;
+  --theme-black: black;
+  --theme-blue: #607da3;
+  --theme-green: #9ebc9e;
+  --theme-pink: #f1e4eb;
+}
+
 body {
   margin: 0;
   font-family: Forma DJR Deck;
-  color: #707070;
+  color: var(--theme-light-gray);
   line-height: 1.5;
 }
 
@@ -10,9 +20,9 @@ img {
 }
 
 a {
-  color: white;
+  color: var(--theme-white);
   text-decoration: none;
-  border: white;
+  border: var(--theme-white);
 }
 
 h1 {
@@ -24,7 +34,7 @@ h1 {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 80px;
-  color: #607da3;
+  color: var(--theme-blue);
 }
 
 ul {
@@ -42,7 +52,7 @@ th {
 
 i {
   padding: 10px;
-  color: #607da3;
+  color: var(--theme-blue);
 }
 
 .background {
@@ -62,7 +72,7 @@ i {
   position: sticky;
   top: 0;
   left: 0;
-  background: #607da3;
+  background: var(--theme-blue);
   opacity: 0.8;
   margin: 0;
   box-sizing: border-box;
@@ -114,7 +124,7 @@ i {
   margin-right: 20px;
   margin-top: 50px;
   margin-bottom: 20px;
-  color: #3b3b3b;
+  color: var(--theme-dark-gray);
 }
 
 .list {
@@ -131,12 +141,12 @@ i {
   padding: 10px;
   font-size: 18px;
   border-radius: 6px;
-  border: white;
-  box-shadow: 0 0 1px 1px white;
+  border: var(--theme-white);
+  box-shadow: 0 0 1px 1px var(--theme-white);
 }
 
 .button:hover {
-  background-color: black;
+  background-color: var(--theme-black);
   opacity: 0.5;
 }
 
@@ -179,7 +189,7 @@ i {
 
 .aspect-ratio {
   position: relative;
-  background: black;
+  background: var(--theme-black);
   width: 100%;
   padding-top: 56.25%;
 }
@@ -195,13 +205,13 @@ iframe {
 .footer {
   width: 100%;
   text-align: center;
-  background: #607da3;
+  background: var(--theme-blue);
 }
 
 .end {
   font-size: 20px;
   font-weight: normal;
-  color: white;
+  color: var(--theme-white);
   padding: 10px;
   margin: 40px auto 0 auto;
 }
@@ -210,7 +220,7 @@ iframe {
   padding: 10px;
   top: 0;
   left: 0;
-  background-color: #9ebc9e;
+  background-color: var(--theme-green);
   width: 100%;
   margin: 0;
   box-sizing: border-box;
@@ -226,7 +236,7 @@ iframe {
   padding: 10px;
   top: 0;
   left: 0;
-  background-color: #9ebc9e;
+  background-color: var(--theme-green);
   width: 100%;
   margin-top: 5px;
   margin-bottom: 5px;
@@ -236,7 +246,7 @@ iframe {
 }
 
 .answers {
-  background-color: #9ebc9e;
+  background-color: var(--theme-green);
   padding: 10px;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -279,7 +289,7 @@ iframe {
 }
 
 .credits {
-  background: #f1e4eb;
+  background: var(--theme-pink);
 }
 
 .final-p {
@@ -295,7 +305,7 @@ iframe {
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
-    color: #607da3;
+    color: var(--theme-blue);
   }
 
   table,
@@ -332,8 +342,8 @@ iframe {
     padding: 10px;
     font-size: 28px;
     border-radius: 6px;
-    border: white;
-    box-shadow: 0 0 1px 1px white;
+    border: var(--theme-white);
+    box-shadow: 0 0 1px 1px var(--theme-white);
   }
 
   .p {
@@ -355,7 +365,7 @@ iframe {
     margin-right: auto;
     margin-top: 50px;
     margin-bottom: 50px;
-    color: #3b3b3b;
+    color: var(--theme-dark-gray);
   }
 
   .subtitle {
@@ -379,7 +389,7 @@ iframe {
   .faq {
     padding: 10px;
     margin: auto;
-    background-color: #9ebc9e;
+    background-color: var(--theme-green);
     max-width: 860px;
   }
 
@@ -393,7 +403,7 @@ iframe {
     padding: 40px;
     max-width: 800px;
     margin: auto;
-    background-color: #9ebc9e;
+    background-color: var(--theme-green);
     margin-top: 20px;
     margin-bottom: 20px;
     display: block;
@@ -402,7 +412,7 @@ iframe {
   }
 
   .answers {
-    background-color: #9ebc9e;
+    background-color: var(--theme-green);
     padding: 20px;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -434,13 +444,13 @@ iframe {
   .footer {
     width: 100%;
     text-align: center;
-    background: #607da3;
+    background: var(--theme-blue);
   }
 
   .end {
     font-size: 30px;
     font-weight: normal;
-    color: white;
+    color: var(--theme-white);
     padding: 20px;
   }
 }
