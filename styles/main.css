@@ -21,6 +21,7 @@ h1 {
   max-width: 270px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 80px;
   color: #607da3;
 }
 
@@ -279,10 +280,12 @@ iframe {
     text-align: center;
     font-family: Forma DJR Deck;
     font-weight: bold;
-    max-width: 600px;
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
     color: #607da3;
+    margin-top: 150px;
+    margin-bottom: 120px;
   }
 
   table,
