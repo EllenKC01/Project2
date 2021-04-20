@@ -21,7 +21,6 @@ h1 {
   max-width: 270px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 80px;
   color: #607da3;
 }
 
@@ -62,6 +61,10 @@ i {
   background: #607da3;
   opacity: 0.8;
   margin: none;
+}
+
+.home-head {
+  margin-bottom: 80px;
 }
 
 .top {
@@ -188,6 +191,7 @@ iframe {
   width: 100%;
   text-align: center;
   background: #607da3;
+  margin: none;
 }
 
 .end {
